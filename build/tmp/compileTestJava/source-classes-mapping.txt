@@ -1,0 +1,2 @@
+com/jojoldu/admin/HelloControllerTest.java
+ com.jojoldu.admin.HelloControllerTest
