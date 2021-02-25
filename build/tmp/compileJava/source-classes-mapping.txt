@@ -1,4 +1,6 @@
 com/jojoldu/admin/Application.java
  com.jojoldu.admin.Application
+com/jojoldu/admin/web/dto/HelloResponseDto.java
+ com.jojoldu.admin.web.dto.HelloResponseDto
 com/jojoldu/admin/web/HelloController.java
  com.jojoldu.admin.web.HelloController

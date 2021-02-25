@@ -1,2 +1,4 @@
 com/jojoldu/admin/HelloControllerTest.java
  com.jojoldu.admin.HelloControllerTest
+com/jojoldu/admin/dto/HelloResponseDtoTest.java
+ com.jojoldu.admin.dto.HelloResponseDtoTest
