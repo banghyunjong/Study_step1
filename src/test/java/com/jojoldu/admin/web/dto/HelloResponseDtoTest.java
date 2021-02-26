@@ -1,4 +1,4 @@
-package com.jojoldu.admin.dto;
+package com.jojoldu.admin.web.dto;
 
 import com.jojoldu.admin.web.dto.HelloResponseDto;
 import org.junit.Test;

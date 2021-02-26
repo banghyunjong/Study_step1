@@ -1,4 +1,4 @@
-package service.posts;
+package com.jojoldu.admin.service.posts;
 
 import com.jojoldu.admin.domain.posts.PostsRepository;
 import com.jojoldu.admin.web.dto.PostsSaveRequestDto;
