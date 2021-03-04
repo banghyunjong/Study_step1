@@ -1,5 +1,6 @@
 package com.jojoldu.admin.service.posts;
 
+import com.jojoldu.admin.domain.posts.Posts;
 import com.jojoldu.admin.domain.posts.PostsRepository;
 import com.jojoldu.admin.web.dto.PostsResponseDto;
 import com.jojoldu.admin.web.dto.PostsSaveRequestDto;
@@ -18,9 +19,11 @@ public class PostsService {
     public long save(PostsSaveRequestDto requestDto) {
         return postsRepository.save(requestDto.toEntity()).getId();
     }
+
     public long update(Long id, PostsUpdateRequestDto requestDto) {
             Posts posts = postsRepository.findById(id).orElseThrow(() -> new
                                             IllegalArgumentException("해당 게시글이 없습니다. id=" + id));
+
             posts.update(requestDto.getTitle(), requestDto.getContent());
 
             return id;

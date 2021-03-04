@@ -1,8 +1,9 @@
 package com.jojoldu.admin.web;
 
+
 import com.jojoldu.admin.web.dto.PostsResponseDto;
 import com.jojoldu.admin.web.dto.PostsSaveRequestDto;
-import lombok.Getter;
+import com.jojoldu.admin.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.jojoldu.admin.service.posts.PostsService;
