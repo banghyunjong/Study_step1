@@ -1,6 +1,5 @@
 package com.jojoldu.admin.web;
 
-
 import com.jojoldu.admin.web.dto.PostsResponseDto;
 import com.jojoldu.admin.web.dto.PostsSaveRequestDto;
 import com.jojoldu.admin.web.dto.PostsUpdateRequestDto;
@@ -14,13 +13,13 @@ public class PostsApiController {
 
     private final PostsService postsService;
 
-    @PostMapping("/api/v1/posts")
+    @PutMapping("/api/v1/posts")
     public long save(@RequestBody PostsSaveRequestDto requestDto) {
         return postsService.save(requestDto);
     }
 
     @PutMapping("/api/v1/posts/{id}")
-    public long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto) {
+    public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto) {
         return postsService.update(id, requestDto);
     }
 

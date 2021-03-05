@@ -1,12 +1,12 @@
 package com.jojoldu.admin.web.dto;
 
+
 import lombok.Getter;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-
 public class PostsUpdateRequestDto {
     private String title;
     private String content;
